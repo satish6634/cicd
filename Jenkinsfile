@@ -13,6 +13,13 @@ stage(mavenstage){
 }
 
 }
+stage(deploystage){
+            steps{
+              echo "this is deploy stage"
+}
+
+}
+
 
     
 
