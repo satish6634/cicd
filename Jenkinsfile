@@ -3,7 +3,7 @@ agent any
 stages{
         stage(gitcheckout){
             steps{
-              echo "this is git stage"
+           checkout([$class: 'GitSCM', branches: [[name: '*/master']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/kliakos/sparkjava-war-example.git']]])
 }
 
 }
