@@ -1,5 +1,10 @@
 pipeline {
 agent any
+tools{
+jdk 'myjava'
+maven 'mymvn'
+
+}
 stages{
         stage(gitcheckout){
             steps{
@@ -9,7 +14,7 @@ stages{
 }
 stage(mavenstage){
             steps{
-              echo "this is maven stage"
+              sh 'mvn package'
 }
 
 }
