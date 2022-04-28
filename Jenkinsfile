@@ -20,7 +20,7 @@ stage(mavenstage){
 }
 stage(deploystage){
             steps{
-              sh '/var/lib/jenkins/workspace/testpipeline/target/sparkjava-hello-world-1.0.war /opt/apache-tomcat-9.0.62/webapps'
+              sh 'cp /var/lib/jenkins/workspace/testpipeline/target/sparkjava-hello-world-1.0.war /opt/apache-tomcat-9.0.62/webapps'
 }
 
 }
