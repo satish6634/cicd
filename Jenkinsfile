@@ -7,6 +7,12 @@ stages{
 }
 
 }
+stage(mavenstage){
+            steps{
+              echo "this is maven stage"
+}
+
+}
 
     
 
